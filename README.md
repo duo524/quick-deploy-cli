@@ -63,7 +63,7 @@ module.exports = {
     webDir: '/www/dist', // 服务器部署路径
     bakDir: '/backup', // 备份路径 生产环境需指定,其他环境无需指定 (打包前备份之前部署目录 最终备份路径为 /backup/last-dist/dist.zip)
   },
-  prod: {
+  dev: {
     name: '开发环境', // 环境名称
     script: 'npm run build', // 打包命令
     host: '192.168.132.32', // 服务器地址

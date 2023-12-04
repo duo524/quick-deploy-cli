@@ -12,14 +12,13 @@
   "bin": {
     "quick-deploy": "bin/quick-deploy.js"
   },
-
   "license": "ISC",
-  "devDependencies": {
-    "archiver": "^6.0.1",
-    "chalk": "^4.1.0",
-    "commander": "^11.1.0",
+  "dependencies": {
+    "archiver": "6.0.1",
+    "chalk": "4.1.0",
+    "commander": "11.1.0",
     "inquirer": "7.3.3",
-    "node-ssh": "^13.1.0",
-    "ora": "^5.1.0"
+    "node-ssh": "13.1.0",
+    "ora": "5.1.0"
   }
 }

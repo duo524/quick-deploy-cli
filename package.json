@@ -12,6 +12,10 @@
   "bin": {
     "quick-deploy": "bin/quick-deploy.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lovecallme/quick-deploy-cli"
+  },
   "license": "ISC",
   "dependencies": {
     "archiver": "6.0.1",

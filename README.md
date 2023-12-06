@@ -8,7 +8,7 @@
 
 ### npm
 
-[https://github.com/lovecallme/quick-deploy-cli](https://github.com/lovecallme/quick-deploy-cli)
+[https://www.npmjs.com/package/quick-deploy-cli](https://www.npmjs.com/package/quick-deploy-cli)
 
 ## 1 安装
 
@@ -31,7 +31,7 @@ npm install quick-deploy-cli -D
 #### 2.1 查看版本
 
 ```shell
-quick-deploy -h
+quick-deploy -v
 ```
 
 #### 2.2 查看帮助
@@ -83,4 +83,26 @@ module.exports = {
 quick-deploy deploy --mode dev # 或者使用 quick-deploy d --mode dev
 ```
 
-生成环境需要输入 `Y` 确认，确认后开始部署，其他环境直接部署
+生产环境需要输入 `Y` 确认，确认后开始部署，其他环境直接部署
+
+#### 2.6 回滚 （在项目目录下）
+
+```shell
+quick-deploy back # 或者使用 quick-deploy -b
+```
+
+回滚只支持生产环境，回滚需要输入 `Y` 确认，确认后开始回滚
+
+
+#### 2.7 注意事项
+1. 生产环境必须使用 pord ，其他环境随意
+
+如配置 test:{...} 部署时需要使用命令如下（配置其他环境模仿如下命令即可）：
+
+```shell
+quick-deploy deploy --mode test # 或者使用简写
+```
+
+2. 生产环境必须配置备份地址，否则无法备份以及回滚
+
+3. 回滚只支持回滚一次无法多次回滚

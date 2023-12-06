@@ -1,6 +1,6 @@
 {
   "name": "quick-deploy-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "前端快速部署脚手架",
   "main": "bin/quick-deploy.js",
   "keywords": [
